@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MaidEasy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #e60000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      background: #fff;
+      margin: 30px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 10px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    section {
+      margin: 40px auto;
+      max-width: 600px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #e60000;
+    }
+    .plan {
+      margin-top: 20px;
+    }
+    .review {
+      margin: 10px 0;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>MaidEasy</h1>
+    <nav>
+      <a href="#">Book Now</a>
+      <a href="#">Subscription Plans</a>
+      <a href="#">Customer Reviews</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Book Your Maid Service</h2>
+    <form>
+      <label>Your Name:</label>
+      <input type="text" name="name">
+
+      <label>Email:</label>
+      <input type="email" name="email">
+
+      <label>Service Address:</label>
+      <input type="text" name="address" placeholder="Enter your address">
+
+      <label>Number of Hours:</label>
+      <input type="number" name="hours">
+
+      <label>Preferred Date:</label>
+      <input type="date" name="date">
+
+      <label>Type of Cleaning:</label>
+      <select name="type">
+        <option>Washing</option>
+        <option>Dusting</option>
+        <option>Floor Cleaning</option>
+        <option>Full House</option>
+      </select>
+
+      <label>Hourly Rate:</label>
+      <input type="text" name="rate" value="100">
+
+      <label>Total Cost:</label>
+      <input type="text" name="total">
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+  <section>
+    <h2>Subscription Plans</h2>
+    <div class="plan">
+      <strong>Basic Plan</strong><br>
+      ₹2,000/month<br>
+      Includes 10 hours of cleaning<br>
+      <button>Subscribe</button>
+    </div>
+    <div class="plan">
+      <strong>Premium Plan</strong><br>
+      ₹3,500/month<br>
+      Includes 20 hours of cleaning<br>
+      <button>Subscribe</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Customer Reviews</h2>
+    <div class="review">"Excellent service! The maid was punctual and thorough."<br>– Priya S.</div>
+    <div class="review">"Very satisfied with the cleaning. Highly recommend!"<br>– Rajesh K.</div>
+  </section>
+
+</body>
+</html>
